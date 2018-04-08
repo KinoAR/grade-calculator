@@ -1,17 +1,18 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <img src="./assets/logo.png">
-    <HelloWorld/>
+    <Main/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import Main from "./components/Main";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>
@@ -24,5 +25,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.grade-row {
+  margin-bottom: 15px;
 }
 </style>
